@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Model</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="model">
+        <h1 class="title">Modal Project</h1>
+        <button class="open-btn">Open Model</button>
+      </div>
+    </header>
+    <div class="model-overlay">
+      <div class="model-container">
+        <h1>Model Content</h1>
+        <button class="close-btn">Close</button>
+      </div>
+    </div>
+
+    <script>
+      const open = document.querySelector(".open-btn");
+      const close = document.querySelector(".close-btn");
+      const modelOverlay = document.querySelector(".model-overlay");
+
+      open.addEventListener("click", () => {
+        modelOverlay.classList.add("open-model");
+      });
+      close.addEventListener("click", () => {
+        modelOverlay.classList.remove("open-model");
+      });
+    </script>
+  </body>
+</html>
