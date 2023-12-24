@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  background: hsl(210, 36%, 96%);
+}
+main {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.counter {
+  text-align: center;
+}
+
+#value {
+  font-size: 6rem;
+}
+
+.counter > h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+button {
+  margin: 0.5rem;
+  padding: 0.375rem 0.75rem;
+  letter-spacing: 0.25rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  background: transparent;
+}
